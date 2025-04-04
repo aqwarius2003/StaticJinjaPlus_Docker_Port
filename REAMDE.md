@@ -82,7 +82,6 @@ docker tag aqwarius2003/static-jinja-plus:0.1.1-slim aqwarius2003/static-jinja-p
 
 1. Для Windows используйте обратные слеши в путях: `-v D:\путь\templates:/app/templates`
 2. Полный список тегов: https://hub.docker.com/r/aqwarius2003/static-jinja-plus/tags
-3. Исходники: https://github.com/aqwarius2003/StaticJinjaPlus-docker
 4. Образы используют рабочую директорию `/StaticJinja` и запускаются с параметрами `--srcpath=/app/templates/ --outpath=/app/build/`
 
 ---
