@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /* Кринжатины чуток, сстиль для мигающего текста */
+        .blink {
+            animation: blink-animation 1s steps(2, start) infinite;
+            color: #ff00ff; /*  фуксиевый - как в 2000-х! */
+            font-weight: bold;
+        }
+        @keyframes blink-animation {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <marquee behavior="scroll" direction="left" scrollamount="10" style="background: yellow; color: red; font-weight: bold;">
+    🚀 САМЫЙ КРУТАЯ HOME PAGE В 2025 ГОДУ (по версии моих домашних хомячов ;-)></>)
+    </marquee>
+    <!-- Счётчик посещений -->
+   <!-- Счётчик -->
+    <div class="counter">
+        <span id="counter">0000</span> посетителей
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Home page. All rights reserved.</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
